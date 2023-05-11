@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using P138Database.DataAccessLayer;
+using P138Database.Models;
 
 namespace P138Database.Controllers
 {

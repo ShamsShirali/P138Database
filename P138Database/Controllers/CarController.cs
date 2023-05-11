@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using P138Database.DataAccessLayer;
+using P138Database.Models;
 
 namespace P138Database.Controllers
 {
@@ -25,7 +26,7 @@ namespace P138Database.Controllers
         {
             if(id == null) return BadRequest();
 
-            Models.Car car = _context.Cars.FirstOrDefault(s => s.Id == id);
+            Car car = _context.Cars.FirstOrDefault(s => s.Id == id);
 
             if (car == null) return NotFound();
 
